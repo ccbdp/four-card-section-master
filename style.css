@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primary-color-red: hsl(0, 78%, 62%);
+    --primary-color-cyan: hsl(180, 62%, 55%);
+    --primary-color-orange: hsl(34, 97%, 64%);
+    --primary-color-blue: hsl(212, 86%, 64%);
+    --neutral-very-dark-blue: hsl(234, 12%, 34%);
+    --neutral-grayish-blue: hsl(229, 6%, 66%);
+    --neutral-very-light-gray: hsl(0, 0%, 98%);
+}
+html{
+    background-color: var(--neutral-very-light-gray) ;
+    min-height: 100vh;
+    max-width: 1440px;
+    width: 90%;
+    margin: auto;
+}
+body{
+    margin-top: 5em;
+}
+h1,h2,h3{
+    text-align: center;
+}
+
+
+h1{
+    font-size: 22px;
+    font-weight: 200;
+    color: var(--neutral-very-dark-blue);
+}
+h2{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--neutral-very-dark-blue);
+
+}
+h3{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--neutral-grayish-blue);
+    padding: 1em;
+
+}
+.content{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    
+    margin: auto;
+    margin-bottom: 1em;
+    border-radius: .5rem;
+    border-top: 3px solid;
+    filter: drop-shadow(0 0 0.5rem hsla(234, 12%, 34%, 0.322));
+    width: min-content;
+}
+
+.content img{
+    display: flex;
+    justify-self: flex-end;
+    width:50px;
+    margin-top: 2em;
+    margin-left: 13em;
+    
+}
+
+h4{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--neutral-very-dark-blue);
+}
+h5{
+    font-weight: 400;
+    color: var(--neutral-grayish-blue);
+    line-height: 2em;
+}
+.supervisor{
+    border-color: var(--primary-color-cyan);
+}
+.team-builder{
+    border-color: var(--primary-color-red);
+}
+.karma{
+    border-color: var(--primary-color-orange);
+}
+.calculator{
+    border-color: var(--primary-color-blue);
+}
+
+
+@media screen and (min-width: 992px){
+
+    body{
+        margin-top: 3em;
+    }
+    
+    h1{
+        font-size: 32px;
+        color: var(--neutral-grayish-blue);
+    }
+    h2{
+        font-size: 32px;
+
+
+    }
+    h3{
+        font-size: 16px;
+        padding: 1em;
+        margin: 0 22em;
+
+    }
+
+    .contents{
+        margin-top: 2em;
+        display: grid;
+        justify-content: center;
+       
+
+    }
+    .content{
+        margin: auto;
+        margin-bottom: 1em;
+        border-radius: .5rem;
+        filter: drop-shadow(0 .3rem .5rem hsla(234, 12%, 34%, 0.322));
+        width: min-content;
+    }
+
+    .content img{
+        width:60px;
+        margin-top: 2em;
+        margin-left: 15em;
+        margin-top: 3em;
+        
+    }
+
+    h4{
+        font-size: 24px;
+    }
+    h5{
+        line-height: 2em;
+        margin-right: 3em;
+    }
+    .supervisor{
+        position: relative;
+        right: 70%;
+        top: 50%;
+    }
+    .team-builder, .karma{
+        position: relative;
+        bottom: 100%;
+    }
+    .calculator{
+        position: relative;
+        left: 70%;
+        bottom: 250%;
+    }
+    .attribution{
+        position: relative;
+        top: -500px;
+        color: var(--neutral-very-dark-blue);
+    }
+
+    .attribution a{
+        color: var(--primary-color-orange);
+    }
+
+}
